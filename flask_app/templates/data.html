@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <h1 class="text-3xl text-center font-bold underline font-mono">User table</h1>
+    <ul class="grid grid-cols-3 gap-5 list-none m-10">
+        {% for item in data %}
+        <!-- user table -->
+            <div class="bg-gray-200 p-3 shadow-xl rounded-2xl">
+                <a href="user-register?id={{ item[0] }}"><span class="font-bold">Id:</span> {{ item[0] }}</a>
+                <li><span class="font-bold">Name:</span> {{ item[1] }}</li>
+                <li><span class="font-bold">Email:</span> {{ item[2] }}</li>
+                <li><span class="font-bold">Mobile:</span> {{ item[3] }}</li>
+                <li><span class="font-bold">Password:</span> ******</li>
+                <!-- <div class="flex gap-2">
+                    <button type="button" class="bg-red-400 px-2 py-1 rounded-lg">Delete</button>
+                    <button type="button" class="bg-blue-400 px-2 py-1 rounded-lg">Edit</button>
+                </div> -->
+            </div>
+        {% endfor %}
+    </ul>
+</body>
+</html>

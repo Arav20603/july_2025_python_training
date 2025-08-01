@@ -1,0 +1,38 @@
+-- use aravind_cse;
+-- create table user (
+-- id int,
+-- name varchar(50),
+-- email varchar(50),
+-- mobile varchar(50),
+-- primary key(id)
+-- )
+-- insert into user (id, name, email, mobile)
+-- values
+-- (2, 'Dakshan', 'dakshan@example.com', '9382742441'),
+-- (3, 'Syndicate', 'syndicate@example.com', '8098325235'),
+-- (4, 'Brock lesnar', 'miamalkova@example.com', '8798325235');
+-- DELETE FROM user WHERE id = 3;
+-- alter table user add password varchar(50);
+-- update user set password = '45678' where id = 4;
+-- select * from user where password = '12345' and email = 'aravind@example.com';
+-- select * from user where name like '%a%';
+-- delete from user where id = 4;
+select * from user;
+
+-- create table hobbies (
+-- id int not null,
+-- user_id int,
+-- description text,
+-- primary key(id)
+-- )
+-- insert into hobbies (id, user_id, description)
+-- values
+-- (1, 1, 'sample'),
+-- (2, 2, 'sample test'),
+-- (3, 1, 'coding');
+-- select * from hobbies;
+-- select * from user as u join hobbies as h on h.user_id = u.id;
+-- select * from user as u join hobbies as h on h.user_id = u.id where u.id = 1;
+-- select * from user as u left join hobbies as h on h.user_id = u.id;
+-- select * from user as u right join hobbies as h on h.user_id = u.id;
+-- update user set name = "sdfsdf" where id = 1;

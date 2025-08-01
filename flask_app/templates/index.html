@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="flex flex-col place-self-center 
+     w-100 mt-10 p-5 shadow-xl rounded-2xl">
+        <h1 class="text-center text-3xl font-bold underline">Form</h1>
+        <form action="/form" method="post" class="flex flex-col m-4">
+            <label>Id:</label>
+            <input type="number" name="id" class="border-1 border-gray-400 w-70 p-2 mb-3 rounded-xl ml-2" placeholder="Enter user Id" required>
+
+            <label>Name:</label>
+            <input type="text" name="name" class="border-1 border-gray-400 w-70 p-2 mb-3 rounded-xl ml-2" placeholder="Enter ur name" required />
+
+            <label>Email:</label>
+            <input type="email" name="email" class="border-1 border-gray-400 w-70 p-2 mb-3 rounded-xl ml-2" placeholder="Enter ur email" required />
+
+            <label>Mobile:</label>
+            <input type="number" name="mobile" class="border-1 border-gray-400 w-70 p-2 mb-3 rounded-xl ml-2" placeholder="Enter mobile no." required>
+
+            <label>Password:</label>
+            <input type="password" name="password" class="border-1 border-gray-400 w-70 p-2 mb-3 rounded-xl ml-2" placeholder="Enter password" required>
+
+            <div class="flex justify-center">
+                <button type="submit" class="bg-blue-500 w-40 p-3 rounded-xl hover:bg-blue-400 cursor-pointer">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
